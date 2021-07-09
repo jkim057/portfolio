@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.aboutMeCntr{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introDetails{
+  width: 20vw;
+}
+
+.contactCntr{
+  display: flex;
+  align-items: center;
+}
+
+.contactDetails{
+  
+  margin: 5px;
+}
