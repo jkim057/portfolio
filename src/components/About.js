@@ -5,7 +5,7 @@ const About = () => {
         <div className="aboutMeCntr">
             <div className="introCntr">
                 <p className="introTitle"> About Me: </p>
-                <p className="introDetails"> A New York based creative who dove into software engineering after exploring the galleries of fine art and the seas of logistics. Please feel free to explore my projects here.</p>
+                <p className="introDetails">I am a New York-based creative who dove into software engineering after exploring the galleries of fine art and the seas of logistics. Please feel free to explore my projects here.</p>
             </div>
             <div className="contactCntr">
                 <p className="contactTitle"> Contact:</p>

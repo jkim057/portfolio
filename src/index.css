@@ -12,23 +12,50 @@ code {
     monospace;
 }
 
+
+/* About Component CSS */
+
 .aboutMeCntr{
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-
+/* About - profile detail CSS */
 .introDetails{
-  width: 20vw;
+  width: 40vw;
 }
 
+/* About - contact CSS */
 .contactCntr{
   display: flex;
   align-items: center;
 }
 
 .contactDetails{
-  
   margin: 5px;
+}
+
+/* Project 1 - Robot Man Page CSS styling */
+/* RobotMan - container  */
+.robotCntr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.robotImg{
+  border: 1px solid black;
+  width: 40vw;
+}
+
+.robotLive{
+  display: inline;
+}
+.robotGithub{
+  display: inline;
+}
+
+.robotDetails{
+  width: 40vw;
 }
