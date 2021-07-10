@@ -38,24 +38,23 @@ code {
 
 /* Project 1 - Robot Man Page CSS styling */
 /* RobotMan - container  */
-.robotCntr{
+.compCntr{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.robotImg{
+.compImg{
   border: 1px solid black;
   width: 40vw;
 }
 
-.robotLive{
+.compLive{
   display: inline;
 }
-.robotGithub{
+.compGithub{
   display: inline;
 }
-
-.robotDetails{
+.compDetails{
   width: 40vw;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import { 
   RobotMan, 
   BeerHere,
@@ -6,10 +6,12 @@ import {
   FightGame,
   About
 } from './components'
-// useState
 import './App.css';
 
 function App() {
+  const [show, setShow] = useState(false)
+// when the project name is clicked, the specific page will show up.
+
   return (
     <div className="App">
      <h1 className="mainTitle"> Joshua Kim - Portfolio</h1>
