@@ -1,8 +1,29 @@
 import React from 'react';
 
-const BeerHere = () => {
+const BeerHere = ({show, buttonCheck}) => {
+    // when project is selected, hide display class in removed
+    // const classes = {
+    //     // select RobotMan
+    //     "0": "compCntr hideComp",
+    //     // Select BeerHere
+    //     "1": "compCntr",
+    //     // Select ImageBoard
+    //     "2": "compCntr hideComp",
+    //     // Select FightGame
+    //     "3": "compCntr hideComp",
+    //     // Select About
+    //     "4": "compCntr hideComp"
+    // }
+
+    function runGo(buttonCheck){
+        if(buttonCheck === "BeerHere"){
+            console.log("clugclug")
+        }
+    }
+
     return (
-        <div className="compCntr">
+        // <div onClick={runGo} className={classes[show]}>
+        <div onClick={runGo} className="compCntr">
             <h3 className="compTitle">Beer Here</h3>
             <img className="compImg" src="../img/beerHereImg.png" alt="BeerHere" />
             <a className="compLive" href="https://jok-beerhere.herokuapp.com/">Live Version</a>

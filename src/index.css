@@ -12,6 +12,91 @@ code {
     monospace;
 }
 
+/* main page header banner */
+.mainTitle{
+  color: white;
+  background-color: black;
+  top: 0%;
+  margin: 0%;
+  padding: 10px;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+ 
+/* framework */
+
+/* .liBtns li{
+  float: left;
+  list-style: none;
+  text-align: center;
+  background-color: #000000;
+  margin-right: 30px;
+  width: 150px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+.liBtns{
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+}
+
+.liBtns:hover {
+  text-decoration: none;
+  color: #75a7aa;
+  background-color: #33B5E5;
+}  */
+
+* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+
+/* default class for all components, remove when project name is selected */
+
 
 /* About Component CSS */
 
@@ -24,6 +109,7 @@ code {
 /* About - profile detail CSS */
 .introDetails{
   width: 40vw;
+  margin: 0%;
 }
 
 /* About - contact CSS */
@@ -36,9 +122,11 @@ code {
   margin: 5px;
 }
 
-/* Project 1 - Robot Man Page CSS styling */
-/* RobotMan - container  */
+/* Project component Styling
+/* container  */
 .compCntr{
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
