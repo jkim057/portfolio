@@ -1,4 +1,5 @@
 import React,{ useState } from 'react';
+import { Route, Link } from 'react-router-dom';
 import { 
   RobotMan, 
   BeerHere,
@@ -6,80 +7,42 @@ import {
   FightGame,
   About
 } from './components'
-import './App.css';
 
 function App() {
-  const [show, setShow] = useState()
-  // when the project name is clicked, the specific page will show up.
-
-  // Because theres no backend or api to pull information from, I can't just map fetch request results to display. I guess I need to change view class based off of click?
-  
-  // function handleClick(event){
-  //   console.log("hi")
-  //   setShow(event.target.id)
-
-  // }
-
-  function buttonCheck(event){
-    event.preventDefault()
-    // console.log(event)
-    setShow(event.target.outerText)
-    console.log(show)
-  }
-
-
+ 
   return (
-    <div className="framework">
-     <h1 className="mainTitle"> Joshua Kim - Portfolio</h1>
+    <div>
+        <h1 className="mainTitle"> Joshua Kim - Portfolio</h1>
+        <div id="projectList">
+          <Link to="/robotman" className="pageBtn">
+            <button className="pageLinks">RobotMan</button>
+          </Link>
 
-     <ul id="projectList">
-       <li onClick={buttonCheck} className="liBtns">RobotMan</li>
-       <li onClick={buttonCheck} className="liBtns">BeerHere</li>
-       <li onClick={buttonCheck} className="liBtns">ImageBoard</li>
-       <li onClick={buttonCheck} className="liBtns">FightGame</li>
-     </ul>
+          <Link to="/beerhere" className="pageBtn">
+            <button className="pageLinks">BeerHere</button>
+          </Link>
 
-     <div className="dropdown">
-      <button className="dropbtn">Projects</button>
-        <div className="dropdown-content projectList">
-          <a className="liBtns" href="#">RobotMan</a>
-          <a className="liBtns" href="#">BeerHere</a>
-          <a className="liBtns" href="#">ImageBoard</a>
-          <a className="liBtns" href="#">FightGame</a>
+          <Link to="/imageboard" className="pageBtn">
+            <button className="pageLinks">ImageBoard</button>
+          </Link>
+
+          <Link to="/fightgame" className="pageBtn">
+            <button className="pageLinks">FightGame</button>
+          </Link>
+
+          <Link to="/about" className="pageBtn">
+            <button className="pageLinks">About</button>
+          </Link>
         </div>
+      <Route exact path="/robotman" component={RobotMan} />
+      <Route exact path="/beerhere" component={BeerHere} />
+      <Route exact path="/imageboard" component={ImageBoard} />
+      <Route exact path="/fightgame" component={FightGame} />
+      <Route exact path="/About" component={About} />
+    <div id="landerText">
+        <h2 > Welcome to Josh Kim's Portfolio</h2>
+        <p> Please feel free to view the projects above or to click on the about page to learn more about Josh Kim.</p> 
     </div>
-
-
-
-
-     <p className="hideComp"> ARE YOU WIZARD</p>
-     {/* hideComp class only works on individual elements, they're not hiding the entire component. need another way to do this. */}
-
-     <RobotMan 
-        show={show}
-
-        buttonCheck={buttonCheck}
-        />
-     <BeerHere
-        show={show}
-
-        buttonCheck={buttonCheck}
-        />
-     <ImageBoard        
-        show={show}
-
-        buttonCheck={buttonCheck} 
-        />
-     <FightGame 
-        show={show}
-
-        buttonCheck={buttonCheck} 
-        />
-     <About
-        show={show}
-
-        buttonCheck={buttonCheck}
-     />
 
     </div>
   );

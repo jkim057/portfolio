@@ -1,29 +1,9 @@
 import React from 'react';
 
-const FightGame = ({show, buttonCheck}) => {
-    // when project is selected, hide display class in removed
-    // const classes = {
-    //     // select RobotMan
-    //     "0": "compCntr hideComp",
-    //     // Select BeerHere
-    //     "1": "compCntr hideComp",
-    //     // Select ImageBoard
-    //     "2": "compCntr hideComp",
-    //     // Select FightGame
-    //     "3": "compCntr",
-    //     // Select About
-    //     "4": "compCntr hideComp"
-    // }
-
-    function runGo(buttonCheck){
-        if(buttonCheck === "FightGame"){
-            console.log("stab stab")
-        }
-    }
+const FightGame = () => {
 
     return (
-        // <div onClick={handleClick} className={classes[show]}>
-        <div onClick={runGo} className="compCntr">
+        <div  className="compCntr">
             <h3 className="compTitle">Fight Game</h3>
             <img className="compImg" src="../img/fightGameImg.png" alt="FightGame" />
             <a className="compLive" href="https://fight-game-front.herokuapp.com/">Live Version</a>
