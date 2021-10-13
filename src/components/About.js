@@ -23,9 +23,10 @@ const About = () => {
             
             <div className="contactCntr">
                 <p className="contactTitle"> Contact:</p>
-                <a className="contactDetails" href="https://github.com/jkim057"> Github</a>
-                <a className="contactDetails" href="https://www.linkedin.com/in/josh-kim-dev">LinkedIn</a>
-                <a className="contactDetails" href="joshkim057@gmail.com">Email</a>
+                <a className="contactDetails" target="_blank" href="https://github.com/jkim057"> Github</a>
+                <a className="contactDetails" target="_blank" href="https://www.linkedin.com/in/josh-kim-dev">LinkedIn</a>
+                <a className="contactDetails" target="_blank" href="joshkim057@gmail.com">joshkim057@gmail.com</a>
+
             </div>
             
         </div>
