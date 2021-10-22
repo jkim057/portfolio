@@ -10,6 +10,7 @@
 3. Updated to change favicon icon to initals (so it's not just base react icon)
 4. Trying to figure out if I can just import files or if I should just start with the template from the getgo
 
+5. Hosting issue: figure out how to setup netlify and remove heroku
 
 
 
