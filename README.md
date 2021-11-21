@@ -4,6 +4,8 @@
 2. https://favicon.io/favicon-generator/ for favicon icon
 3. https://html5up.net/ for website templates
 
+4. https://www.netlify.com/blog/2016/04/11/installing-your-own-ssl-certificates-a-step-by-step-guide/ setup SSL certification 
+5. https://answers.netlify.com/t/support-guide-finding-the-ip-addresses-for-netlifys-nameservers/8366 setup IP address to point domain name to hosting site
 # Notes:
 1. Took way too long to remember how Route and Link worked. Wish I figured it out sooner, it's so much more easy to figure out then the display:none and passing of the state nonsense I was overcomplicated things with.
 2. Updated links to open new tabs instead of opening the links on same tab.
@@ -12,6 +14,7 @@
 
 5. Hosting issue: figure out how to setup netlify and remove heroku
 
+<!-- are there any thing that i should add to portfolio besides just the custom domain thing? -->
 
 
 # Future plans:
